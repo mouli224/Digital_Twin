@@ -1,0 +1,235 @@
+
+<robot name="jack" >
+
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.0030071865378406538 0.00014154788942299552 0.05591757888982463" rpy="0 0 0"/>
+    <mass value="4.632745962530948"/>
+    <inertia ixx="0.009676" iyy="0.009676" izz="0.005056" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="./meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+   <material name="silver">
+  <color rgba="0.700 0.700 0.700 1.000"/>
+</material>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="./meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="head_1">
+  <inertial>
+    <origin xyz="-1.77956820907434e-06 1.1441140199030988e-06 0.03063938447984857" rpy="0 0 0"/>
+    <mass value="1.5495145241048947"/>
+    <inertia ixx="0.001131" iyy="0.001131" izz="0.001195" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.003007 -0.000142 -0.132021" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="./meshes/head_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+   <material name="silver">
+  <color rgba="0.700 0.700 0.700 1.000"/>
+</material>
+  </visual>
+  <collision>
+    <origin xyz="-0.003007 -0.000142 -0.132021" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="./meshes/head_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="screw_1">
+  <inertial>
+    <origin xyz="-0.0031033581934499896 0.196039434773979 0.14856469037947262" rpy="0 0 0"/>
+    <mass value="0.7567949663178379"/>
+    <inertia ixx="0.002474" iyy="0.002516" izz="0.000156" ixy="0.0" iyz="-1e-06" ixz="5e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.006014 0.19588 -0.001163" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="./meshes/screw_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+   <material name="silver">
+  <color rgba="0.700 0.700 0.700 1.000"/>
+</material>
+  </visual>
+  <collision>
+    <origin xyz="-0.006014 0.19588 -0.001163" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="./meshes/screw_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="bull_gear_1">
+  <inertial>
+    <origin xyz="-0.0030068134621596887 0.13402154788942292 0.15150819039459762" rpy="0 0 0"/>
+    <mass value="0.014071732363726169"/>
+    <inertia ixx="1.1e-05" iyy="1.1e-05" izz="2.2e-05" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.006014 0.13388 -0.001163" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="./meshes/bull_gear_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  <material name="black">
+  <color rgba="0.1 0.1 0.1 1.000"/>
+</material>
+  </visual>
+  <collision>
+    <origin xyz="-0.006014 0.13388 -0.001163" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="./meshes/bull_gear_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="pinion_gear_1">
+  <inertial>
+    <origin xyz="-0.058654699221435534 -0.0005762682736991168 -0.13916623482795912" rpy="0 0 0"/>
+    <mass value="0.015611687834022035"/>
+    <inertia ixx="2e-06" iyy="2e-06" izz="3e-06" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.059619 -0.061736 -0.293892" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="./meshes/pinion_gear_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+   <material name="black">
+  <color rgba="0.1 0.1 0.1 1.000"/>
+</material>
+  </visual>
+  <collision>
+    <origin xyz="-0.059619 -0.061736 -0.293892" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="./meshes/pinion_gear_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="sensor_1">
+  <inertial>
+    <origin xyz="0.0036287929269774154 0.1692092556548879 0.10603625338614514" rpy="0 0 0"/>
+    <mass value="0.6833126827436713"/>
+    <inertia ixx="0.00126" iyy="0.000709" izz="0.001565" ixy="-0.000147" iyz="-6e-05" ixz="-1.3e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.006014 0.13388 -0.001163" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="./meshes/sensor_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+   <material name="yellow">
+  <color rgba="1.0 0.700 0.0 1.000"/>
+</material>
+  </visual>
+  <collision>
+    <origin xyz="-0.006014 0.13388 -0.001163" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="./meshes/sensor_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="load_cell_holder_1">
+  <inertial>
+    <origin xyz="-0.00809316093830615 -3.896582473705639e-08 0.005959800511437602" rpy="0 0 0"/>
+    <mass value="0.060378076940754415"/>
+    <inertia ixx="4.7e-05" iyy="1.6e-05" izz="3.4e-05" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.040039 -0.000234 -0.222021" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="./meshes/load_cell_holder_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+   <material name="black">
+   <color rgba="0.1 0.1 0.1 1.000"/>
+</material>
+  </visual>
+  <collision>
+    <origin xyz="-0.040039 -0.000234 -0.222021" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="./meshes/load_cell_holder_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="load_cell_1">
+  <inertial>
+    <origin xyz="-0.03787910394686526 0.01611896104433127 -0.010349809605404992" rpy="0 0 0"/>
+    <mass value="0.029241655696833388"/>
+    <inertia ixx="1e-06" iyy="1.8e-05" izz="1.8e-05" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.037451 0.015885 -0.248871" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="./meshes/load_cell_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+   <material name="silver">
+  <color rgba="0.700 0.700 0.700 1.000"/>
+</material>
+  </visual>
+  <collision>
+    <origin xyz="-0.037451 0.015885 -0.248871" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="./meshes/load_cell_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="head" type="revolute">
+  <origin xyz="0.003007 0.000142 0.132021" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="head_1"/>
+  <axis xyz="0.0 0.0 -1.0"/>
+   <limit upper="100000" lower="" effort="100" velocity="100"/>
+</joint>
+
+<joint name="screw" type="prismatic">
+  <origin xyz="0.003007 -0.196022 00.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="screw_1"/>
+  <axis xyz="-0.0 -0.0 1.0"/>
+  <limit upper="0.12" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Rigid 3" type="fixed">
+  <origin xyz="0.003007 -0.134022 -0.130858" rpy="0 0 0"/>
+  <parent link="head_1"/>
+  <child link="bull_gear_1"/>
+</joint>
+
+<joint name="pinion_gear" type="continuous">
+  <origin xyz="0.053605 0.195616 0.291" rpy="0 0 0"/>
+  <parent link="sensor_1"/>
+  <child link="pinion_gear_1"/>
+  <axis xyz="-0.0 0.0 1.0"/>
+</joint>
+
+<joint name="Rigid 12" type="fixed">
+  <origin xyz="0.003007 -0.134022 0.001" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="sensor_1"/>
+</joint>
+
+<joint name="Rigid 13" type="fixed">
+  <origin xyz="0.034025 0.196114 0.220858" rpy="0 0 0"/>
+  <parent link="screw_1"/>
+  <child link="load_cell_holder_1"/>
+</joint>
+
+<joint name="Rigid 14" type="fixed">
+  <origin xyz="-0.002588 -0.016119 0.02685" rpy="0 0 0"/>
+  <parent link="load_cell_holder_1"/>
+  <child link="load_cell_1"/>
+</joint>
+
+</robot>

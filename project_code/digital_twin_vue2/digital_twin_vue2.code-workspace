@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../digital_twin_backend"
+		}
+	],
+	"settings": {}
+}
